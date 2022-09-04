@@ -1,0 +1,108 @@
+
+/* Fondo de la pagina*/
+
+body {  
+    margin: 0;
+    background: rgba(247, 206, 130,70%);
+
+}
+
+/* Estilo del banner*/
+.bg-home {
+    text-align: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+    
+    
+}
+.bg-home .i{
+    top: 0;
+    left:0;
+    position: absolute;
+}
+
+
+/* Estilo de mi nombre dentro de banner*/
+.bg-texto {
+    color: black;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    transform: translate(50%, 70%);
+    text-align: center;
+}
+
+
+
+/* Iconos tamaño y color */
+.bi {
+    font-size: 2em;
+    color: black;
+}
+
+/* Estilo para logearse */
+.logeo {
+  background:white ;
+  padding: 40px 10px;
+}
+
+
+
+.carousel-inner{
+  
+  border-color: black;
+  background: lightcyan;
+
+}
+/* Estilo Skills */
+
+
+.skills ul li .nav-link {
+    margin: 15px; 
+
+}
+
+.skills ul li .nav-link.active {
+   background-color: darkblue;
+}
+
+.skills .single-progress{
+    position: relative;
+}
+
+.skills .single-progress .progress {
+    height: 15px;
+    border-radius: 8px;
+    background-color:wheat;
+    
+}
+
+.skills .single-progress .progress-bar {
+    background-image:white;
+    background-color: darkblue;
+}
+
+.skills .single-progress .h6 {
+    text-align: left;
+    height: 5px;
+}
+
+.skills .single-progress .label {
+    position: absolute; 
+    right: 0;
+    top: 0;
+    
+}
+
+
+
+
+/* Estilo del pie de pagina*/
+
+footer{
+    background: black;
+    color: white;
+    margin-top: 40px;
+}
+  

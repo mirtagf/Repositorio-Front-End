@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <!--Referencia a CSS FONTS ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--Referencia a CSS de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!--Referencia a Javascript de bootstrap para desplegar lista-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    
+    <!--Enlazar CSS-->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--Encabezado, con barra de navegacion de bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <!--Logo argentina programa-->
+            <a class="navbar-brand" href="#">
+                <img src="/Imagenes/Logo.png" alt="LogoArgentinaPrograma" width="100" height="60" class="d-inline-block align-text-top">
+                #YoProgramo
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Elementos del menu-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Proyects</a>
+                    </li>
+                
+                </ul>
+                <!--Agregar Redes sociales-->
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-md-auto">
+                        <a target="_blank" class= "btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/analaurasayago/" role="buttom">
+                            <i class="bi bi-linkedin"></i> 
+                        </a>
+                    </li>
+
+                    <li class="nav-item col-md-auto">
+                        <a target="_blank" class= "btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/anitaasayago/" role="buttom">
+                            <i class="bi bi-instagram"></i> 
+                        </a>
+                    </li>
+                </ul>
+
+                <!--Agregar boton para logearse-->
+                <form class="d-flex">
+                    <button class="btn btn-outline-success">Login</button>
+
+                </form>
+           </div>
+          
+
+
+        </div>
+        
+
+    </nav>
+    <!--Banner-->
+    
+    
+    <div class="container-fluid p-0">
+        <div class="row banner">
+            <div class="col banner-fluid">
+                <div class="bg-home">
+                    <img src="/Imagenes/foto2.jpg" class="img-fluid banner" alt="" width="1000%" height="80%">
+                    <i class="bi bi-pencil-fill"></i>
+                </div>
+                
+                <div class="bg-texto">
+                    <h1> <em>Welcome, I'm Ana Laura Sayago</em></h1>
+                    <h4><em>Accountant/Full Stack Developer</em></h4>
+               </div>
+
+            </div>
+            
+        </div>
+        <!--Seccion acercaDe, utilizacion de imagen responsive de bootstrap-->
+        <section class="row about me">
+            <div class="col-3">
+                <img src="/Imagenes/foto perfil.jpg" class="img-fluid" alt="Foto de perfil" width="80%" height="80%">
+                <i class="bi bi-pencil-fill"></i>
+            </div>
+
+            <div class="col-7">
+                <h3>About me:</h3>
+                
+                <p>Soy Full Stack Developer Jr:
+                    Mi nombre es Ana, soy capaz de planear, diseñar, implementar, y mantener sitios web y aplicaciones web.
+                    Tengo ganas de aprender y seguir capacitandome en nuevas tecnologias.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="true">Education</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills" aria-selected="false">Main Skills</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-proyects-tab" data-bs-toggle="pill" data-bs-target="#pills-proyects" type="button" role="tab" aria-controls="pills-proyects" aria-selected="false">Proyects</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <!--Ingreso de estudios con card-->
+                    <div class="tab-pane fade show active" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row g-0">
+                                        <div class="col-md-4">
+                                           <img src="/Imagenes/Logo.png" class="img-fluid rounded-start" alt="LogoArgentinaPrograma">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Course Argentina Program</h5>
+                                                <p class="card-text">Ministry of Productive Development and Chamber of the Argentina Software Industry (CESSI)</p>
+                                                <p class="card-text"><small class="text-muted">2022-Currenty</small></p>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row g-0">
+                                        <div class="col-md-4">
+                                         <img src="/Imagenes/Logo utn.png" class="img-fluid rounded-start" alt="LogoUTN">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">National Technological University, Argentina</h5>
+                                                <p class="card-text">Higher Technician in Programming</p>
+                                                <p class="card-text"><small class="text-muted">2019</small></p>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row g-0">
+                                        <div class="col-md-4">
+                                         <img src="/Imagenes/Logo unc.png" class="img-fluid rounded-start" alt="Logounc">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">National University of Cordoba, Argentina</h5>
+                                                <p class="card-text">Microsoft Excel course-Advanced</p>
+                                                <p class="card-text"><small class="text-muted">2018</small></p>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row g-0">
+                                        <div class="col-md-4">
+                                         <img src="/Imagenes/Logo utn.png" class="img-fluid rounded-start" alt="LogoUTN">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">National Technological University, Argentina</h5>
+                                                <p class="card-text">English course-Intermediate</p>
+                                                <p class="card-text"><small class="text-muted">2017-2020</small></p>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-4">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row g-0">
+                                        <div class="col-md-4">
+                                         <img src="/Imagenes/Logo unc.png" class="img-fluid rounded-start" alt="Logounc">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">National University of Cordoba, School of Economics, Argentina</h5>
+                                                <p class="card-text">Bachelor's Degree in Finance and Accounting</p>
+                                                <p class="card-text"><small class="text-muted">2009-2015</small></p>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+
+
+              
+                        </div>
+                            
+                    </div>  
+                    <!--Ingreso de experiencia-->
+                    <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab" tabindex="0">
+                        <div class="row shadow bg-write rounded">
+                            <div class="col-2">
+                                <img src="Imagenes/Logo Crowe.png" class=img-fluid alt="Logo empresa Crowe">
+                               
+
+                            </div>
+                            <div class="col-10">
+                                <h4>Internal Audit</h4>
+                                <h6>Crowe</h6>
+                                <p class="small text-muted">2016-Currently</p>
+
+                                <ul>
+                                    <li>Analyse the processes of a company.</li>
+                                    <li>Identify risk within business practices and evaluating the controls put in place to counter these. </li>
+                                    <li>Planning and executing internal audits, reviewing audit data, interviewing, and consulting employees and examining business operations.</li>
+                                    <li>Improve business performance through risk management, control and identifying opportunities for improvement.</li>
+                                    <li>Prepare reports of audit findings and make recommendations to the company.</li>
+                                    <li>Carry out presentations to management using Power BI and Power Point.</li>
+                                    <li>Participation in SAP ERP implementation project.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row shadow bg-write rounded">
+                            <div class="col-2">
+                                <img src="Imagenes/Logo Profarmer.png" class=img-fluid alt="Logo empresa Profarmer">
+                               
+
+                            </div>
+                            <div class="col-10">
+                                <h4>Administrative- Accounting Analyst, Argentina</h4>
+                                <h6>Profarmer SA, Argentina</h6>
+                                <p class="small text-muted">2015-2016</p>
+
+                                <ul>
+                                    <li>Prepare Credit Reports.</li>
+                                    <li>Billing control.</li>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                           
+
+                                
+                               
+                               
+                    </div>
+
+                    <!--Ingreso de habilidades-->
+                    <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                                    
+                            <div class="col-3 border">
+                                <h5>Hard Skills</h5>
+                                <div class="single-progress">
+                                    <h6>HTML5, CSS y Bootstrap</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>TypeScypt, Angular</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>MySQL</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>Java con Spring Boot</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+
+                            </div>
+                            
+                            <div class="col-3 border">
+                                <div class="single-progress">
+                                    <h5>Soft Skills</h5>
+                                    <h6>Team player</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>Flexible</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>Proactive</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>Creativity</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+
+
+                            </div>
+                            
+                            <div class="col-3 border">
+                                <div class="single-progress">
+                                    <h5>Language</h5>
+                                    <h6>Spanish</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>English</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+    
+                                <div class="single-progress">
+                                    <h6>Italian</h6>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="label">60%</span>
+                                </div>
+
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                    <!--Ingreso de proyectos-->
+                    <div class="tab-pane fade" id="pills-proyects" role="tabpanel" aria-labelledby="pills-proyects-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+
+
+                    </div>
+                </div>
+
+
+                    
+                  
+
+                    
+
+                  
+
+                    
+                
+            </div>
+            
+
+        </div>
+
+        <!--Footer-->
+        <div class="row">
+            <div class="col">
+
+                <footer>@2022 Sayago Ana Laura</footer>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+
