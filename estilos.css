@@ -48,6 +48,9 @@ body {
 }
 
 
+.bi .bi-pencil-fill{
+    display: none;
+}
 
 .carousel-inner{
   
